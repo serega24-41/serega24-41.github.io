@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Документ с изображением и ссылками</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .image-container {
+            display: flex; /* Flex-контейнер */
+            flex-direction: column; /* Элементы в столбец */
+            gap: 20px; /* Промежуток между изображениями */
+        }
+        .image-container img {
+            max-width: 200px;
+            cursor: pointer; /* Указатель при наведении */
+        }
+        a {
+            text-decoration: none;
+            color: #007bff; /* Цвет ссылки */
+            font-weight: bold; /* Жирный шрифт */
+        }
+        a:hover {
+            text-decoration: underline; /* Подчеркивание при наведении */
+        }
+    </style>
+</head>
+<body>
+    <h1>Выберите задание</h1>
+    <div class="image-container">
+        <a href="./lab1_1.html">
+            <img src="./lab1_4.html/images/images/mushroom.jpg" alt="Lab1_1" title="Lab1_1">
+        </a>
+        <a href="./lab1_2.html">
+            <img src="./lab1_4.html/images/images/globus.gif" alt="Lab1_2" title="Lab1_2">
+        </a>
+        <a href="./lab1_3/lab1_3">
+            <img src="./lab1_4.html/images/images/aquaria.jpg" alt="Lab1_3" title="Lab1_3">
+        </a>
+        <a href="./lab1_4.html/lab1_4.html">
+            <img src="./lab1_4.html/images/images/slon.png" alt="Lab1_4" title="lab1_4">
+        </a>
+    </div>
 
+</body>
+</html>
