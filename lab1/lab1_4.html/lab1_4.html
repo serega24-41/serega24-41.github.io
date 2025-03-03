@@ -1,1 +1,29 @@
-
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>изображение</title>
+        <style>
+            img{
+                width: auto;
+                height: auto;
+                object-fit: cover;
+                margin: 200px 15px;}
+            .img-con{
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                justify-content: center;
+                gap: 38px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="img-con">
+            <img src="./images/images/slon.png" alt="slon">
+            <img src="./images/images/html5-logo.png" alt="HTML">
+            <img src="./images/images/globus.gif" alt="planet">
+            <img src="./images/images/html5-logo.png" alt="HTML">
+            <img src="./images/images/slon.png" alt="slon">
+        </div>
+    </body>
+</html>
