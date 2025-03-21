@@ -3,7 +3,7 @@
 <head>
 		<meta charset="UTF-8">
 		<title>Оформление вертикального меню</title>
-		<style>
+        <style>
 			html {
 					background: #f0f0f0;
 			}
@@ -15,61 +15,57 @@
 			
 			.menu ul {
 					list-style-type: none;
+                    list-style-image: url(./pic/minus.gif);
 			}
 			
-			.menu li {
-					
+			.menu li li{
+					list-style-image: url(./pic/point.gif);
 			}
 			
 			.menu li a {
 					color: rgba(34, 105, 146, 0.897);
+                    
 			}
 			
 			.menu li a:hover {
 					color: blueviolet;
 			}
 			
-			.menu li ul {
-					
-			}
-			
-			.menu li li {
-					
-			}
+		
 	</style>
 </head>
 <body>
-	<nav class="menu">
+    <nav class="menu">
 		<ul>
-			<li><img src="./pic/minus.gif" alt="minus"><a href="#">Фильмы</a>
+			<li><a href="#">Фильмы</a>
 				<ul>
-					<li><img src="./pic/point.gif" alt="minus"><a href="#">Экшн</a></li>
-					<li><img src="./pic/point.gif" alt="minus"><a href="#">Мелодрамы</a></li>
-					<li><img src="./pic/point.gif" alt="minus"><a href="#">Сериалы</a></li>
-					<li><img src="./pic/point.gif" alt="minus"><a href="#">Семейные</a></li>
+					<li><a href="#">Экшн</a></li>
+					<li><a href="#">Мелодрамы</a></li>
+					<li><a href="#">Сериалы</a></li>
+					<li><a href="#">Семейные</a></li>
 				</ul>
 			</li>
-			<li><img src="./pic/minus.gif" alt="minus"><a href="#">Музыка</a>
+			<li><a href="#">Музыка</a>
 				<ul>
-					<li><img src="./pic/point.gif" alt="minus"><a href="#">Классика</a></li>
-					<li><img src="./pic/point.gif" alt="minus"><a href="#">Джаз</a></li>
-					<li><img src="./pic/point.gif" alt="minus"><a href="#">Рок</a></li>
-					<li><img src="./pic/point.gif" alt="minus"><a href="#">Грандж</a></li>
+					<li><a href="#">Классика</a></li>
+					<li><a href="#">Джаз</a></li>
+					<li><a href="#">Рок</a></li>
+					<li><a href="#">Грандж</a></li>
 				</ul>
 			</li>
-			<li><img src="./pic/minus.gif" alt="minus"><a href="#">Софт</a>
+			<li><a href="#">Софт</a>
 				<ul>
-					<li><img src="./pic/point.gif" alt="minus"><a href="#">Графика</a></li>
-					<li><img src="./pic/point.gif" alt="minus"><a href="#">3D-моделирование</a></li>
-					<li><img src="./pic/point.gif" alt="minus"><a href="#">Машинопись</a></li>
-					<li><img src="./pic/point.gif" alt="minus"><a href="#">Переводчики</a></li>
+					<li><a href="#">Графика</a></li>
+					<li><a href="#">3D-моделирование</a></li>
+					<li><a href="#">Машинопись</a></li>
+					<li><a href="#">Переводчики</a></li>
 				</ul>
 			</li>
-			<li><img src="./pic/minus.gif" alt="minus"><a href="#">Игры</a>
+			<li><a href="#">Игры</a>
 				<ul>
-					<li><img src="./pic/point.gif" alt="minus"><a href="#">РПГ</a></li>
-					<li><img src="./pic/point.gif" alt="minus"><a href="#">Шутеры</a></li>
-					<li><img src="./pic/point.gif" alt="minus"><a href="#">Пасьянсы</a></li>
+					<li><a href="#">РПГ</a></li>
+					<li><a href="#">Шутеры</a></li>
+					<li><a href="#">Пасьянсы</a></li>
 				</ul>
 			</li>
 		</ul>

@@ -56,12 +56,23 @@
             background-position: -10px -46px;
             left: 70px;
         }
+        .menu li .icon-minus{
+            display: none;
+        }
+        .menu li:hover .icon-plus{
+            display: none;
+        }
+        .menu li .icon-minus{
+            display: inline;
+        }
 	</style>
 </head>
 <body>
 	<nav class="menu">
 		<ul>
-			<li><div class=" icon icon-minus"></div><a href="#">Фильмы</a>
+			<li><div class=" icon icon-minus icon-plus"></div>
+               
+                <a href="#">Фильмы</a>
 				<ul>
 					<li><div class="icon icon-point"></div><a href="#">Экшн</a></li>
 					<li><div class="icon icon-point"></div><a href="#">Мелодрамы</a></li>
