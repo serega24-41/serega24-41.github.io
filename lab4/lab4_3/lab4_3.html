@@ -1,1 +1,75 @@
+html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню с иконками</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin: 10px 0;
+            position: relative;
+            padding-left: 30px;
+        }
+        .icon {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 16px;
+            height: 16px;
+            background-image: url('css_sprites.png');
+            background-repeat: no-repeat;
+        }
+        .icon-films { background-position: -10 -10; }
+        .icon-music { background-position: -46px -10; }
+        .icon-software { background-position: -10px -46; }
+    </style>
+</head>
+<body>
+
+<h1>Каталоги</h1>
+<ul>
+    <li><div class="icon icon-films"></div><strong>Фильмы</strong>
+        <ul>
+            <li><div class="icon icon-films"></div>Экшн</li>
+            <li><div class="icon icon-films"></div>Мелодрамы</li>
+            <li><div class="icon icon-films"></div>Сериалы</li>
+            <li><div class="icon icon-films"></div>Семейные</li>
+        </ul>
+    </li>
+    <li><div class="icon icon-music"></div><strong>Музыка</strong>
+        <ul>
+            <li><div class="icon icon-music"></div>Классика</li>
+            <li><div class="icon icon-music"></div>Джаз</li>
+            <li><div class="icon icon-music"></div>Рок</li>
+            <li><div class="icon icon-music"></div>Грандж</li>
+        </ul>
+    </li>
+    <li><div class="icon icon-software"></div><strong>Софт</strong>
+        <ul>
+            <li><div class="icon icon-software"></div>Графика</li>
+            <li><div class="icon icon-software"></div>3D-моделирование</li>
+            <li><div class="icon icon-software"></div>Машинопись</li>
+            <li><div class="icon icon-software"></div>Переводчики</li>
+        </ul>
+    </li>
+    <li><div class="icon icon-games"></div><strong>Игры</strong>
+        <ul>
+            <li><div class="icon icon-games"></div>РПГ</li>
+            <li><div class="icon icon-games"></div>Шутеры</li>
+            <li><div class="icon icon-games"></div>Пасьянсы</li>
+        </ul>
+    </li>
+</ul>
+
+</body>
+</html>
 
