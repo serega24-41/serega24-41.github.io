@@ -5,31 +5,33 @@
     <title>Использование float при построении колонок</title>
     <style>
       
-      #left, #right, #center {
-            display: inline-block;
-            vertical-align: top;
-        } 
-
+      * {
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+        }
         #left {
             width: 200px;
-            
-            
+            display: inline-block;
+            vertical-align: top;
             background: #ccf;
            
         }
-        #right {
-           
-            width: 200px;
-           
-            background: #fcc;
-          
-        }
+       
         #center {
-           
+            display: inline-block;
+            vertical-align: top;
             width: 600px;
-            
             background: #cfc;
            
+        }
+        #right {
+            display: inline-block;
+            vertical-align: top;
+            width: 200px;
+            background: #fcc;
+          
         }
       
     </style>
@@ -38,6 +40,5 @@
 	<div id="left">left<br>left<br>left<br>left<br>left</div>
     <div id="center">center text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</div>
 	<div id="right">right<br>right<br>right<br>right</div>
-	
 </body>
 </html>
