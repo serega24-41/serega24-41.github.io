@@ -5,32 +5,41 @@
     <title>Использование float при построении колонок</title>
     <style>
       
-      * {
-            box-sizing: border-box;
+      body {
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 10px; 
         }
-        body {
-            display: grid;
-            grid-template-columns: 200px 600px 200px;
-            gap: 10px;
+
+        .grid-container {
+            display: grid; 
+            grid-template-columns: 200px 1fr 200px; 
+            gap: 10px; 
         }
-        #left {
-            background: #ccf;
+
+        .grid-item {
+            padding: 10px; 
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
         }
-       
-        #center {
-         
-            background: #cfc;   
+
+        #left-inline {
+            background: #ccf; 
         }
-        #right {
-          
-            background: #fcc;
+
+        #center-inline {
+            background: #cfc;
         }
-      
+
+        #right-inline {
+            background: #fcc; 
+        }
     </style>
 </head>
 <body>
-	<div id="left">left<br>left<br>left<br>left<br>left</div>
-    <div id="center">center text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</div>
-	<div id="right">right<br>right<br>right<br>right</div>
+    <div class="grid-container">
+        <div id="left-inline" class="grid-item">left<br>left<br>left<br>left<br>left</div>
+        <div id="center-inline" class="grid-item">center text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</div>
+        <div id="right-inline" class="grid-item">right<br>right<br>right<br>right</div>
+    </div>
 </body>
 </html>
