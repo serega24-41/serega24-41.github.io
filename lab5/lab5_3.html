@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <title>Использование float при построении колонок</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Использование inline-block</title>
+
     <style>
+<<<<<<< HEAD
       div{
         position: relative;
         display: inline-block;
@@ -41,4 +44,65 @@
 	<div id="right">right<br>right<br>right<br>right</div>
     </div>
 </body>
+=======
+      .wrap {
+        min-width: 1040px;
+      }
+
+      #left,
+      #right,
+      #center {
+        display: inline-block;
+        vertical-align: top;
+        box-sizing: border-box;
+      }
+
+      #left {
+        background: #ccf;
+        width: 200px;
+      }
+
+      #right {
+        background: #fcc;
+        width: 200px;
+      }
+
+      #center {
+        background: #cfc;
+        width: 600px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div id="left">left<br />left<br />left<br />left<br />left</div>
+      <div id="center">
+        center text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text
+      </div>
+      <div id="right">right<br />right<br />right<br />right</div>
+    </div>
+  </body>
+>>>>>>> 975f280868498a93bcc777dd5e1602b7a29d068d
 </html>
