@@ -6,41 +6,65 @@
     <title>Использование inline-block</title>
 
     <style>
-      div{
-        position: relative;
+      .wrap {
+        min-width: 1040px;
+      }
+
+      #left,
+      #right,
+      #center {
         display: inline-block;
         vertical-align: top;
+        box-sizing: border-box;
       }
-        #left {
-            width: 200px;
-           
-            background: #ccf;
-            
-        }
-       
-        #center {
-           
-            width: 600px;
-            background: #cfc;
-            
-        }
-        #right {
-          
-            width: 200px;
-            background: #fcc;
-            
-        }
-      .container{
-        white-space: nowrap; 
-    
+
+      #left {
+        background: #ccf;
+        width: 200px;
+        margin-right: 10px;
+      }
+
+      #right {
+        background: #fcc;
+        width: 200px;
+        margin-left: 10px;
+      }
+
+      #center {
+        background: #cfc;
+        width: 600px;
       }
     </style>
-</head>
-<body>
-    <div class="container">
-	<div id="left">left<br>left<br>left<br>left<br>left</div>
-    <div id="center">center text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</div>
-	<div id="right">right<br>right<br>right<br>right</div>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div id="left">left<br />left<br />left<br />left<br />left</div>
+      <div id="center">
+        center text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text
+        text text text text
+      </div>
+      <div id="right">right<br />right<br />right<br />right</div>
     </div>
-</body>
+  </body>
 </html>
