@@ -4,41 +4,41 @@
     <meta charset="utf-8">
     <title>Использование float при построении колонок</title>
     <style>
-      
-      * {
-            box-sizing: border-box;
-        }
-        body {
-            display: flex;
-        }
+      div{
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+      }
         #left {
             width: 200px;
-            display: inline-block;
-            vertical-align: top;
-            background: #ccf;
            
+            background: #ccf;
+            
         }
        
         #center {
-            display: inline-block;
-            vertical-align: top;
+           
             width: 600px;
             background: #cfc;
-           
+            
         }
         #right {
-            display: inline-block;
-            vertical-align: top;
+          
             width: 200px;
             background: #fcc;
-          
+            
         }
-      
+      .container{
+        white-space: nowrap; 
+    
+      }
     </style>
 </head>
 <body>
+    <div class="container">
 	<div id="left">left<br>left<br>left<br>left<br>left</div>
     <div id="center">center text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</div>
 	<div id="right">right<br>right<br>right<br>right</div>
+    </div>
 </body>
 </html>
